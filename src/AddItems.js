@@ -26,11 +26,10 @@ const AddItems = () => {
             </form>
             <hr style={{ margin: 2 }} className="horizontal" />
             <div>
-                <h4 style={{color:'red'}}>Lists:</h4>
                 {data && data.map((list) => {
                     return (
                         <li className="listItems" key={list.id}>
-                            {list.text} <AiOutlineDelete style={{ color: 'red', marginTop: 4 }} className="deletebutton" onClick={()=>dispatch(removeList(list.id))} />
+                            {list.text} <AiOutlineDelete style={{ color: 'red', marginTop: 4 }} className="deletebutton" onClick={() => dispatch(removeList(list.id))} />
                         </li>
                     )
                 })}
