@@ -1,23 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
+import AddItems from './AddItems';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h3>Redux Toolkit Example</h3><hr style={{margin:2 , width: '100%'}} />
+      <AddItems />
     </div>
   );
 }
